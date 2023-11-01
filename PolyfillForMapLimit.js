@@ -48,8 +48,6 @@ const chop = (input, limit) => {
 
 function mapLimit(inputs, limit, iterateeFn, callback) {
   const chopped = chop(inputs, limit);
-  let completed = 0;
-  console.log(chopped);
 
   const finalResult = chopped.reduce((prev, current) => {
     return prev.then(
